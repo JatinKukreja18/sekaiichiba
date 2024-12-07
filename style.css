@@ -5,9 +5,24 @@ body {
   align-items: center;
   height: 100vh;
   height: 100svh;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.banner_landscape {
+  display: block;
+}
+.banner_portrait {
+  display: none;
+}
+@media screen and (orientation: portrait) {
+  .banner_portrait {
+    display: block;
+  }
+  .banner_landscape {
+    display: none;
   }
 }
